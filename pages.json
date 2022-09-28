@@ -1,17 +1,105 @@
 {
 	"pages": [{
-		"path": "pages/index/index",
+		"path": "pages/tab/home",
 		"style": {
-			"navigationBarTitleText": "uni-app"
+			"navigationBarTitleText": "首页",
+			"enablePullDownRefresh": false
 		}
+
+	}, {
+		"path": "pages/tab/discover",
+		"style": {
+			"navigationBarTitleText": "发现",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/tab/messages",
+		"style": {
+			"navigationBarTitleText": "消息",
+			"enablePullDownRefresh": false
+		}
+
+	}, {
+		"path": "pages/tab/mine",
+		"style": {
+			"navigationBarTitleText": "我的",
+			"enablePullDownRefresh": false
+		}
+
 	}],
+	"subPackages": [{
+			"root": "pages/shop",
+			"pages": [{
+				"path": "shopDetail",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pages/shared",
+			"pages": [{
+				"path": "newFeatures",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		},
+		{
+			"root": "pages/account",
+			"pages": [{
+				"path": "profile",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": false
+				}
+
+			}]
+		}
+	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#f5f5f5",
 		"app-plus": {
-			"background": "#efeff4"
+			"background": "#f5f5f5",
+			"backgroundColorTop": "#f5f5f5" ,
+			"backgroundColorBottom": "#f5f5f5"
 		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff5523",
+		"borderStyle": "white",
+		"backgroundColor": "#FFFFFF",
+		"list": [{
+				"pagePath": "pages/tab/home",
+				"iconPath": "static/tab/home_normal.png",
+				"selectedIconPath": "static/tab/home_checked.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tab/discover",
+				"iconPath": "static/tab/find_normal.png",
+				"selectedIconPath": "static/tab/find_checked.png",
+				"text": "发现"
+			}, {
+				"pagePath": "pages/tab/messages",
+				"iconPath": "static/tab/message_normal.png",
+				"selectedIconPath": "static/tab/message_checked.png",
+				"text": "消息"
+			}, {
+				"pagePath": "pages/tab/mine",
+				"iconPath": "static/tab/persion_normal.png",
+				"selectedIconPath": "static/tab/persion_checked.png",
+				"text": "我的"
+			}
+		]
 	}
 }
